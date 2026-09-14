@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JQZBDTY1PG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JQZBDTY1PG');
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Studio Masażu Relaksacyjnego Duet | Gliwice Centrum</title>
@@ -115,5 +124,32 @@
             </p>
         </div>
     </footer>
+    <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Клик по номеру телефона
+    document.querySelectorAll('a[href^="tel:"]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        if (typeof gtag === 'function') {
+          gtag('event', 'contact_call_click', {
+            event_category: 'Lead',
+            event_label: 'Phone Call Click'
+          });
+        }
+      });
+    });
+
+    // Клик по WhatsApp
+    document.querySelectorAll('a[href*="wa.me"]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        if (typeof gtag === 'function') {
+          gtag('event', 'contact_whatsapp_click', {
+            event_category: 'Lead',
+            event_label: 'WhatsApp Click'
+          });
+        }
+      });
+    });
+  });
+</script>
 </body>
 </html>
