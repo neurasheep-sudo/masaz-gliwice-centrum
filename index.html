@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Masażu Relaksacyjnego Duet | Gliwice Centrum</title>
+    <meta name="description" content="Profesjonalny salon masażu relaksacyjnego w Gliwicach przy ul. Zwycięstwa 28. Regeneracja, aromaterapia, wyciszenie. Zarezerwuj sesję.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0f1115;
+            --card-bg: #181b22;
+            --gold: #d4af37;
+            --text: #e2e8f0;
+            --text-dim: #94a3b8;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Montserrat', sans-serif; }
+        body { background: var(--bg); color: var(--text); line-height: 1.6; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+        header { padding: 20px 0; border-bottom: 1px solid rgba(255,255,255,0.08); display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 20px; font-weight: 700; color: #fff; letter-spacing: 1px; }
+        .logo span { color: var(--gold); }
+        .header-btn { background: var(--gold); color: #000; text-decoration: none; padding: 8px 16px; border-radius: 6px; font-weight: 600; font-size: 14px; }
+        .hero { padding: 60px 0; text-align: center; }
+        .badge { display: inline-block; background: rgba(212, 175, 55, 0.1); color: var(--gold); border: 1px solid var(--gold); padding: 4px 12px; border-radius: 20px; font-size: 12px; margin-bottom: 15px; }
+        h1 { font-size: 32px; margin-bottom: 15px; color: #fff; }
+        p.subtitle { font-size: 16px; color: var(--text-dim); max-width: 600px; margin: 0 auto 30px; }
+        .actions { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
+        .btn { padding: 12px 24px; border-radius: 6px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; }
+        .btn-primary { background: #25D366; color: #fff; }
+        .btn-outline { border: 1px solid var(--gold); color: var(--gold); }
+        .services { padding: 50px 0; }
+        h2 { text-align: center; margin-bottom: 30px; font-size: 24px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .card { background: var(--card-bg); padding: 25px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.05); }
+        .card h3 { color: var(--gold); margin-bottom: 10px; font-size: 18px; }
+        .card p { color: var(--text-dim); font-size: 14px; margin-bottom: 15px; }
+        .card .price { font-size: 18px; font-weight: 700; color: #fff; }
+        .location { background: var(--card-bg); border-radius: 8px; padding: 30px; margin: 40px 0; text-align: center; border: 1px solid rgba(255,255,255,0.05); }
+        footer { border-top: 1px solid rgba(255,255,255,0.08); padding: 30px 0; text-align: center; font-size: 13px; color: var(--text-dim); }
+        footer a { color: var(--text-dim); margin: 0 10px; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container" style="display:flex; justify-content:space-between; width:100%; align-items:center;">
+            <div class="logo">DUET<span>.STUDIO</span></div>
+            <a href="tel:+48502855086" class="header-btn">Zadzwoń</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <span class="badge">Gliwice Centrum, ul. Zwycięstwa 28</span>
+                <h1>Studio Masażu Relaksacyjnego</h1>
+                <p class="subtitle">Kameralna przestrzeń relaksu i regeneracji dla ciała i umysłu. Doświadcz profesjonalnych rytuałów wyciszających w centrum Gliwic.</p>
+                <div class="actions">
+                    <a href="https://wa.me/48502855086?text=Dzie%C5%84%20dobry,%20chcia%C5%82bym%20zapyta%C4%87%20o%20rezerwacj%C4%99%20sesji%20relaksacyjnej" class="btn btn-primary" target="_blank">Rezerwacja przez WhatsApp</a>
+                    <a href="tel:+48502855086" class="btn btn-outline">Kontakt telefoniczny</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="container">
+                <h2>Programy Relaksacyjne</h2>
+                <div class="grid">
+                    <!-- 1. 30 minut - 200 zł -->
+                    <div class="card">
+                        <h3>Masaż Ekspresowy Relaks</h3>
+                        <p>Krótka, intensywna sesja wyciszająca napięcie mięśniowe i stres. Idealna opcja, gdy masz ograniczony czas.</p>
+                        <div class="price">200 zł / 30 min</div>
+                    </div>
+
+                    <!-- 2. 60 minut - 300 zł -->
+                    <div class="card">
+                        <h3>Klasyczny Masaż Całego Ciała</h3>
+                        <p>Pełna godzina głębokiego odprężenia z użyciem ciepłych olejków. Najczęściej wybierana sesja regeneracyjna.</p>
+                        <div class="price">300 zł / 60 min</div>
+                    </div>
+
+                    <!-- 3. 4 ręce (duecie) - 550 zł -->
+                    <div class="card">
+                        <h3>Relaks w Duecie (Na 4 Ręce)</h3>
+                        <p>Synchroniczny masaż relaksacyjny wykonywany jednocześnie przez dwie masażystki. Podwójna intensywność wyciszenia.</p>
+                        <div class="price">550 zł / 60 min</div>
+                    </div>
+
+                    <!-- 4. VIP 120 minut - 600 zł -->
+                    <div class="card">
+                        <h3>Rytuał VIP Głębokie Odprężenie</h3>
+                        <p>Dwie godziny kompleksowej regeneracji całego ciała w spokojnym tempie. Pełny reset i maksymalny komfort.</p>
+                        <div class="price">600 zł / 120 min</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="location">
+                <h2>Komfort i Pełna Prywatność</h2>
+                <p style="color: var(--text-dim); max-width: 700px; margin: 10px auto;">Nasz gabinet mieści się w centrum Gliwic przy <strong>ul. Zwycięstwa 28</strong>. Zapewniamy kameralne warunki, prywatny parking dla gości oraz wcześniejszą rezerwację terminów.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Duet Studio Gliwice. Wszelkie prawa zastrzeżone.</p>
+            <p style="margin-top: 10px;">
+                <a href="/polityka-prywatnosci.html">Polityka Prywatności</a> | <a href="/regulamin.html">Regulamin Rezerwacji</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
