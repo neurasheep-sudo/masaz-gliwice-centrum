@@ -1,157 +1,417 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JQZBDTY1PG"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-JQZBDTY1PG');
-</script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NZCL98C4');</script>
+    <!-- End Google Tag Manager -->
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Studio Masażu Relaksacyjnego Duet | Gliwice Centrum</title>
-    <link rel="icon" type="image/jpeg" href="logo.jpg">
-    <meta name="description" content="Profesjonalny salon masażu relaksacyjnego w Gliwicach przy ul. Zwycięstwa 28. Regeneracja, aromaterapia, wyciszenie. Zarezerwuj sesję.">
+    <title>Masaż Nuru Gliwice | Zmysłowy Masaż Tantryczny i Relaksacyjny</title>
+    <meta name="description" content="Ekskluzywny masaż Nuru, tantryczny oraz rytuały body-to-body w centrum Gliwic (ul. Zwycięstwa 28). Doświadczone masażystki, prywatny parking i 100% dyskrecji.">
+
+    <!-- Фавиконки -->
+    <link rel="icon" type="image/jpeg" href="img/logo.jpg">
+    <link rel="apple-touch-icon" href="img/logo.jpg">
+
+    <!-- Индексация и каноникал -->
+    <link rel="canonical" href="https://duetmassage.pl/">
+    <link rel="alternate" hreflang="pl" href="https://duetmassage.pl/">
+    <link rel="alternate" hreflang="en" href="https://duetmassage.pl/en/">
+    <link rel="alternate" hreflang="x-default" href="https://duetmassage.pl/">
+
+    <!-- Мета-теги для шеринга (WhatsApp, соцсети) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://duetmassage.pl/">
+    <meta property="og:title" content="Masaż Nuru i Tantryczny Gliwice | Duet Massage">
+    <meta property="og:description" content="Kameralny apartament w centrum Gliwic (ul. Zwycięstwa 28). Zmysłowy masaż Nuru, tantryczny i relaksacyjny w pełnej dyskrecji.">
+    <meta property="og:image" content="https://duetmassage.pl/img/logo.jpg?v=2">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="DUET Studio Masażu Gliwice">
+    <meta name="twitter:description" content="Ekskluzywny masaż Nuru i relaksacyjny dla mężczyzn w centrum Gliwic.">
+    <meta name="twitter:image" content="https://duetmassage.pl/img/logo.jpg">
+
+    <!-- Шрифты и стили -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --bg: #0f1115;
-            --card-bg: #181b22;
-            --gold: #d4af37;
-            --text: #e2e8f0;
-            --text-dim: #94a3b8;
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=7.3">
+
+    <!-- Микроразметка Schema.org для Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "HealthAndBeautyBusiness",
+          "@id": "https://duetmassage.pl/#salon",
+          "name": "Duet Studio Masażu Gliwice",
+          "image": "https://duetmassage.pl/img/logo.jpg",
+          "telephone": "+48502855086",
+          "priceRange": "200 - 600 PLN",
+          "url": "https://duetmassage.pl/",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "ul. Zwycięstwa 28",
+            "addressLocality": "Gliwice",
+            "postalCode": "44-100",
+            "addressCountry": "PL"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 50.2976,
+            "longitude": 18.6766
+          },
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+              "opens": "10:00",
+              "closes": "23:00"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Czym różni się masaż Nuru od tradycyjnego masażu relaksacyjnego?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Masaż Nuru to technika, w której masażystka masuje całe ciało klienta za pomocą własnego ciała (body-to-body) przy użyciu specjalnego olejku z wodorostów."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Gdzie dokładnie znajduje się salon w Gliwicach i czy jest parking?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Nasz salon mieści się w centrum Gliwic przy ul. Zwycięstwa 28. Na miejscu dostępny jest darmowy, prywatny parking na posesji."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Jak zarezerwować wizytę w salonie Duet?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Wizytę można umówić telefonicznie pod numerem +48 502 855 086 lub bezpośrednio przez aplikację WhatsApp."
+              }
+            }
+          ]
         }
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Montserrat', sans-serif; }
-        body { background: var(--bg); color: var(--text); line-height: 1.6; }
-        .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
-        header { padding: 20px 0; border-bottom: 1px solid rgba(255,255,255,0.08); display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-size: 20px; font-weight: 700; color: #fff; letter-spacing: 1px; }
-        .logo span { color: var(--gold); }
-        .header-btn { background: var(--gold); color: #000; text-decoration: none; padding: 8px 16px; border-radius: 6px; font-weight: 600; font-size: 14px; }
-        .hero { padding: 60px 0; text-align: center; }
-        .badge { display: inline-block; background: rgba(212, 175, 55, 0.1); color: var(--gold); border: 1px solid var(--gold); padding: 4px 12px; border-radius: 20px; font-size: 12px; margin-bottom: 15px; }
-        h1 { font-size: 32px; margin-bottom: 15px; color: #fff; }
-        p.subtitle { font-size: 16px; color: var(--text-dim); max-width: 600px; margin: 0 auto 30px; }
-        .actions { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
-        .btn { padding: 12px 24px; border-radius: 6px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; }
-        .btn-primary { background: #25D366; color: #fff; }
-        .btn-outline { border: 1px solid var(--gold); color: var(--gold); }
-        .services { padding: 50px 0; }
-        h2 { text-align: center; margin-bottom: 30px; font-size: 24px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-        .card { background: var(--card-bg); padding: 25px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.05); }
-        .card h3 { color: var(--gold); margin-bottom: 10px; font-size: 18px; }
-        .card p { color: var(--text-dim); font-size: 14px; margin-bottom: 15px; }
-        .card .price { font-size: 18px; font-weight: 700; color: #fff; }
-        .location { background: var(--card-bg); border-radius: 8px; padding: 30px; margin: 40px 0; text-align: center; border: 1px solid rgba(255,255,255,0.05); }
-        footer { border-top: 1px solid rgba(255,255,255,0.08); padding: 30px 0; text-align: center; font-size: 13px; color: var(--text-dim); }
-        footer a { color: var(--text-dim); margin: 0 10px; text-decoration: none; }
-    </style>
+      ]
+    }
+    </script>
 </head>
 <body>
-    <header>
-        <div class="container" style="display:flex; justify-content:space-between; width:100%; align-items:center;">
-            <div class="logo">DUET<span>.STUDIO</span></div>
-            <a href="tel:+48502855086" class="header-btn">Zadzwoń</a>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NZCL98C4"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+   <!-- Шапка с графическим логотипом -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="/" class="logo-wrapper">
+                <img src="img/logo.jpg" alt="Duet Studio Masażu" class="logo-img">
+                <span class="logo-text">DUET<span>.MASSAGE</span></span>
+            </a>
+            <div class="header-contacts">
+                <span class="location-badge">📍 Gliwice Centrum</span>
+                <span class="hours-badge">🕒 10:00 – 23:00</span>
+                <div class="lang-switch">
+                    <span class="lang-btn active">PL</span>
+                    <span class="lang-divider">/</span>
+                    <a href="/en/" class="lang-btn">EN</a>
+                </div>
+                <a href="tel:+48502855086" class="btn-call-header">📞 Zadzwoń</a>
+            </div>
         </div>
     </header>
 
     <main>
+        <!-- Hero Секция -->
         <section class="hero">
-            <div class="container">
-                <span class="badge">Gliwice Centrum, ul. Zwycięstwa 28</span>
-                <h1>Studio Masażu Relaksacyjnego</h1>
-                <p class="subtitle">Kameralna przestrzeń relaksu i regeneracji dla ciała i umysłu. Doświadcz profesjonalnych rytuałów wyciszających w centrum Gliwic.</p>
-                <div class="actions">
-                    <a href="https://wa.me/48502855086?text=Dzie%C5%84%20dobry,%20chcia%C5%82bym%20zapyta%C4%87%20o%20rezerwacj%C4%99%20sesji%20relaksacyjnej" class="btn btn-primary" target="_blank">Rezerwacja przez WhatsApp</a>
-                    <a href="tel:+48502855086" class="btn btn-outline">Kontakt telefoniczny</a>
+            <div class="container hero-container">
+<span class="badge-gold">✦ Gliwice Centrum, ul. Zwycięstwa 28 (własny parking)</span>               
+             <h1>Masaż Nuru i Relaksacyjny Gliwice</h1>
+                <p class="hero-subtitle">Odkryj wyjątkową atmosferę relaksu i zmysłowych doznań. Kameralny salon masażu w centrum Gliwic, stworzony dla Twojego komfortu</p>
+                
+                <div class="hero-actions">
+                    <a href="https://wa.me/48502855086?text=Dzie%C5%84%20dobry,%20chcia%C5%82bym%20zapyta%C4%87%20o%20rezerwacj%C4%99" class="btn btn-whatsapp" target="_blank">
+                        <span>💬 Rezerwacja WhatsApp</span>
+                    </a>
+                    <a href="#cennik" class="btn btn-outline">Zobacz Cennik</a>
                 </div>
-            </div>
-        </section>
 
-        <section class="services">
-            <div class="container">
-                <h2>Programy Relaksacyjne</h2>
-                <div class="grid">
-                    <!-- 1. 30 minut - 200 zł -->
-                    <div class="card">
-                        <h3>Masaż Ekspresowy Relaks</h3>
-                        <p>Krótka, intensywna sesja wyciszająca napięcie mięśniowe i stres. Idealna opcja, gdy masz ograniczony czas.</p>
-                        <div class="price">200 zł / 30 min</div>
-                    </div>
-
-                    <!-- 2. 60 minut - 300 zł -->
-                    <div class="card">
-                        <h3>Klasyczny Masaż Całego Ciała</h3>
-                        <p>Pełna godzina głębokiego odprężenia z użyciem ciepłych olejków. Najczęściej wybierana sesja regeneracyjna.</p>
-                        <div class="price">300 zł / 60 min</div>
-                    </div>
-
-                    <!-- 3. 4 ręce (duecie) - 550 zł -->
-                    <div class="card">
-                        <h3>Relaks w Duecie (Na 4 Ręce)</h3>
-                        <p>Synchroniczny masaż relaksacyjny wykonywany jednocześnie przez dwie masażystki. Podwójna intensywność wyciszenia.</p>
-                        <div class="price">550 zł / 60 min</div>
-                    </div>
-
-                    <!-- 4. VIP 120 minut - 600 zł -->
-                    <div class="card">
-                        <h3>Rytuał VIP Głębokie Odprężenie</h3>
-                        <p>Dwie godziny kompleksowej regeneracji całego ciała w spokojnym tempie. Pełny reset i maksymalny komfort.</p>
-                        <div class="price">600 zł / 120 min</div>
+                <!-- Happy Hours Баннер -->
+                <div class="happy-hours-banner">
+                    <div class="hh-badge">🔥 Promocja Dnia</div>
+                    <div class="hh-content">
+                        <h3>Happy Hours: 13:00 – 16:00</h3>
+                        <p>Masaż 1h w cenie <strong>250 zł</strong> (zamiast <span class="old-price">300 zł</span>)</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="container">
-            <div class="location">
-                <h2>Komfort i Pełna Prywatność</h2>
-                <p style="color: var(--text-dim); max-width: 700px; margin: 10px auto;">Nasz gabinet mieści się w centrum Gliwic przy <strong>ul. Zwycięstwa 28</strong>. Zapewniamy kameralne warunki, prywatny parking dla gości oraz wcześniejszą rezerwację terminów.</p>
+       <!-- Лаконичные карточки мастеров -->
+        <section class="section-team">
+            <div class="container">
+                <div class="section-title">
+                    <span class="badge-gold">Nasz Zespół</span>
+                    <h2>Wybierz Swoją Masażystkę</h2>
+                    <p>Kliknij na profil, aby zobaczyć szczegóły i wszystkie zdjęcia</p>
+                </div>
+
+                <div class="team-grid">
+                    <!-- 1. Eliza -->
+                    <div class="team-card" onclick="openMasterModal('eliza')">
+                        <div class="team-image-wrapper">
+                            <img src="img/girl1_1.jpg" alt="Eliza" class="team-cover-img">
+                            <div class="status-online">● Dostępna dzisiaj</div>
+                        </div>
+                        <div class="team-info">
+                            <h3>Eliza</h3>
+                            <span class="team-role">Masażystka Premium</span>
+                            <button type="button" class="btn-view-profile">Zobacz profil</button>
+                        </div>
+                    </div>
+
+                    <!-- 2. Łucja -->
+                    <div class="team-card" onclick="openMasterModal('lucja')">
+                        <div class="team-image-wrapper">
+                            <img src="img/girl2_1.jpg" alt="Łucja" class="team-cover-img">
+                            <div class="status-online">● Dostępna dzisiaj</div>
+                        </div>
+                        <div class="team-info">
+                            <h3>Łucja</h3>
+                            <span class="team-role">Masażystka Premium</span>
+                            <button type="button" class="btn-view-profile">Zobacz profil</button>
+                        </div>
+                    </div>
+
+                    <!-- 3. Alina -->
+                    <div class="team-card" onclick="openMasterModal('alina')">
+                        <div class="team-image-wrapper">
+                            <img src="img/girl3_1.jpg" alt="Alina" class="team-cover-img">
+                            <div class="status-online">● Dostępna dzisiaj</div>
+                        </div>
+                        <div class="team-info">
+                            <h3>Alina</h3>
+                            <span class="team-role">Masażystka Premium</span>
+                            <button type="button" class="btn-view-profile">Zobacz profil</button>
+                        </div>
+                    </div>
+
+                    <!-- 4. Dagmara -->
+                    <div class="team-card" onclick="openMasterModal('dagmara')">
+                        <div class="team-image-wrapper">
+                            <img src="img/girl4_1.jpg" alt="Dagmara" class="team-cover-img">
+                            <div class="status-online">● Dostępna dzisiaj</div>
+                        </div>
+                        <div class="team-info">
+                            <h3>Dagmara</h3>
+                            <span class="team-role">Masażystka Premium</span>
+                            <button type="button" class="btn-view-profile">Zobacz profil</button>
+                        </div>
+                    </div>
+                    <!-- 5. Beata -->
+                    <div class="team-card" onclick="openMasterModal('beata')">
+                        <div class="team-image-wrapper">
+                            <img src="img/girl5_1.jpg" alt="Beata" class="team-cover-img">
+                            <div class="status-online">● Dostępna dzisiaj</div>
+                        </div>
+                        <div class="team-info">
+                            <h3>Beata</h3>
+                            <span class="team-role">Masażystka Premium</span>
+                            <button type="button" class="btn-view-profile">Zobacz profil</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+   
+       <!-- Ценник и Программы -->
+        <section id="cennik" class="section-programs">
+            <div class="container">
+                <div class="section-title">
+                    <span class="badge-gold">Cennik Główny</span>
+                    <h2>Sesje Masażu Nuru</h2>
+                    <p>Wybierz preferowany czas trwania sesji relaksacyjnej w centrum Gliwic</p>
+                </div>
+
+                <div class="pricing-grid">
+                    <!-- 1. Masaż Nuru – 30 minut -->
+                    <div class="price-box">
+                        <h3>✨ Masaż Body-to-Body</h3>
+                        <div class="time">30 minut</div>
+                        <div class="cost">200 <span>zł</span></div>
+                        <div class="price-desc">
+                            <p class="program-text">30 minut zmysłowego relaksu w wyjątkowej atmosferze. Masaż Nuru to niezwykłe doświadczenie, które pozwala oderwać się od codzienności i całkowicie skupić na chwili dla siebie. Idealna opcja, jeśli chcesz poznać masaż Nuru lub masz mniej czasu.</p>
+                        </div>
+                        <a href="https://wa.me/48502855086?text=Rezerwacja%20Masa%C5%BC%20Nuru%2030%20min" class="btn-book" data-service="Masaż Nuru (30 min)">Zarezerwuj</a>
+                    </div>
+
+                    <!-- 2. Masaż Nuru – 60 minut -->
+                    <div class="price-box featured">
+                        <div class="badge-featured">Bestseller</div>
+                        <h3>💧 Kultowy Masaż Nuru</h3>
+                        <div class="time">60 minut (1h)</div>
+                        <div class="cost">300 <span>zł</span></div>
+                        <div class="price-desc">
+                            <p class="program-text">Godzina, podczas której świat może poczekać. Zmysłowy masaż Nuru w kameralnej atmosferze, stworzony dla osób, które chcą pozwolić sobie na więcej czasu, relaksu i wyjątkowych doznań. To nasza najczęściej wybierana sesja Nuru w Gliwicach.</p>
+                        </div>
+                        <a href="https://wa.me/48502855086?text=Rezerwacja%20Masa%C5%BC%20Nuru%201h" class="btn-book btn-book-gold" data-service="Masaż Nuru (60 min)">Zarezerwuj</a>
+                    </div>
+
+                    <!-- 3. Masaż Nuru 4 ręce – 60 minut -->
+                    <div class="price-box">
+                        <h3>🔥 Nuru w Duecie (4 Ręce)</h3>
+                        <div class="time">60 minut (2 masażystki)</div>
+                        <div class="cost">550 <span>zł</span></div>
+                        <div class="price-desc">
+                            <p class="program-text">Jedna osoba. Dwie masażystki. Cztery ręce. Wyjątkowa forma masażu Nuru, podczas której dwie masażystki pracują jednocześnie. Idealna propozycja dla osób szukających bardziej intensywnego i wyjątkowego doświadczenia. Masaż Nuru 4 ręce w Gliwicach to coś więcej niż standardowa sesja.</p>
+                        </div>
+                        <a href="https://wa.me/48502855086?text=Rezerwacja%20Masa%C5%BC%20Nuru%204%20r%C4%99ce" class="btn-book" data-service="Masaż Nuru 4 ręce (60 min)">Zarezerwuj</a>
+                    </div>
+
+                    <!-- 4. VIP Masaż Nuru – 120 minut -->
+                    <div class="price-box">
+                        <h3>👑 VIP Rytuał Tantryczno-Nuru</h3>
+                        <div class="time">120 minut (2h)</div>
+                        <div class="cost">600 <span>zł</span></div>
+                        <div class="price-desc">
+                            <p class="program-text">Dwie godziny tylko dla Ciebie. Najdłuższa i najbardziej wyjątkowa sesja Nuru w naszej ofercie. Więcej czasu, spokojniejsze tempo i możliwość pełnego zanurzenia się w atmosferze salonu. VIP Masaż Nuru w Gliwicach dla osób, które nie chcą patrzeć na zegarek.</p>
+                        </div>
+                        <a href="https://wa.me/48502855086?text=Rezerwacja%20VIP%20Masa%C5%BC%20Nuru%202h" class="btn-book" data-service="VIP Masaż Nuru (120 min)">Zarezerwuj</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+<!-- Блок FAQ для локального SEO -->
+        <section class="section-faq">
+            <div class="container">
+                <div class="section-title">
+                    <span class="badge-gold">Częste Pytania</span>
+                    <h2>Pytania i Odpowiedzi</h2>
+                    <p>Wszystko, co warto wiedzieć przed wizytą w naszym salonie w Gliwicach</p>
+                </div>
+                <div class="faq-grid">
+                    <div class="faq-card">
+                        <h3>Czym różni się masaż Nuru od masażu klasycznego?</h3>
+                        <p>Masaż Nuru to japońska technika relaksu całego ciała z wykorzystaniem specjalnego, śliskiego żelu z wodorostów. Masażystka wykonuje płynne ruchy ślizgowe całym ciałem (body-to-body), co daje znacznie głębszy poziom odprężenia i zmysłowych doznań.</p>
+                    </div>
+                    <div class="faq-card">
+                        <h3>Gdzie mieści się salon i czy zapewniacie parking?</h3>
+                        <p>Salon Duet zlokalizowany jest w samym sercu Gliwic przy ul. Zwycięstwa 28. Do dyspozycji naszych gości jest darmowy, bezpieczny parking na zamkniętej posesji, co gwarantuje pełną dyskrecję.</p>
+                    </div>
+                    <div class="faq-card">
+                        <h3>Jak przygotować się do sesji masażu?</h3>
+                        <p>Nie musisz zabierać ze sobą niczego. W gabinecie zapewniamy prywatny prysznic, świeże ręczniki oraz jednorazową bieliznę i kosmetyki. Wystarczy zarezerwować dogodny termin przez WhatsApp lub telefon.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Блок Доверия, Часов Работы и Конфиденциальности -->
+        <section class="section-privacy">
+            <div class="container">
+                <div class="privacy-box">
+                    <h2>Zaufanie i Pełna Dyskrecja</h2>
+                    <div class="privacy-grid">
+                        <div class="privacy-item">
+                            <h4>Prawdziwe zdjęcia 100%</h4>
+                            <p>Wszystkie fotografie na stronie przedstawiają nasze prawdziwe masażystki. Zapewniamy całkowitą zgodność wizerunku i parametrów z rzeczywistością.</p>
+                        </div>
+                        <div class="privacy-item">
+                            <h4>Godziny Otwarcia</h4>
+                            <p>Zapraszamy codziennie w godzinach <strong>10:00 – 23:00</strong>. Przyjmujemy po wcześniejszej rezerwacji telefonicznej lub przez WhatsApp.</p>
+                        </div>
+                        <div class="privacy-item">
+                            <h4>Najwyższa Higiena</h4>
+                            <p>Twój komfort i bezpieczeństwo to nasz priorytet. Do dyspozycji prywatny prysznic, świeże ręczniki i jednorazowe artykuły higieniczne.</p>
+                        </div>
+                        <div class="privacy-item">
+                            <h4>Dyskretna Lokalizacja</h4>
+                            <p>Centrum Gliwic, ul. Zwycięstwa 28. Pełna anonimowość, wejście do kameralnego apartamentu oraz darmowy prywatny parking na posesji.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <p>© 2026 Duet Studio Gliwice. Wszelkie prawa zastrzeżone.</p>
-            <p style="margin-top: 10px;">
-                <a href="polityka-prywatnosci.html">Polityka Prywatności</a> | <a href="regulamin.html">Regulamin Rezerwacji</a>
-            </p>
+<!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>© 2026 Duet Massage Gliwice. Wszelkie prawa zastrzeżone.</p>
+            <p class="disclaimer-18">Serwis przeznaczony wyłącznie dla osób pełnoletnich (18+).</p>
+            <p class="disclaimer-legal">Nie świadczymy żadnych usług o charakterze seksualnym.</p>
         </div>
     </footer>
-    <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    // Клик по номеру телефона
-    document.querySelectorAll('a[href^="tel:"]').forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        if (typeof gtag === 'function') {
-          gtag('event', 'contact_call_click', {
-            event_category: 'Lead',
-            event_label: 'Phone Call Click'
-          });
-        }
-      });
-    });
 
-    // Клик по WhatsApp
-    document.querySelectorAll('a[href*="wa.me"]').forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        if (typeof gtag === 'function') {
-          gtag('event', 'contact_whatsapp_click', {
-            event_category: 'Lead',
-            event_label: 'WhatsApp Click'
-          });
-        }
-      });
-    });
-  });
-</script>
+    <!-- Плавающая мобильная панель -->
+    <div class="mobile-sticky-bar">
+        <a href="https://wa.me/48502855086?text=Dzie%C5%84%20dobry,%20chcia%C5%82bym%20zapyta%C4%87%20o%20termin" class="sticky-btn sticky-whatsapp" target="_blank">
+            <span>💬 WhatsApp</span>
+        </a>
+        <a href="tel:+48502855086" class="sticky-btn sticky-call">
+            <span>📞 Zadzwoń</span>
+        </a>
+    </div>
+<!-- Модальное окно полного профиля мастера -->
+    <div id="masterModal" class="master-modal">
+        <div class="master-modal-overlay" onclick="closeMasterModal()"></div>
+        <div class="master-modal-content">
+            <button class="modal-close-btn" onclick="closeMasterModal()">&times;</button>
+            
+            <!-- Слайдер внутри модалки -->
+            <div class="modal-slider-box">
+                <img id="modalProfileImg" src="" alt="Master photo" class="modal-main-img">
+                <div class="modal-slider-controls">
+                    <button type="button" class="modal-arrow" onclick="prevModalPhoto()">&#10094;</button>
+                    <span id="modalPhotoCounter" class="modal-photo-counter">1 / 1</span>
+                    <button type="button" class="modal-arrow" onclick="nextModalPhoto()">&#10095;</button>
+                </div>
+            </div>
+
+            <!-- Детали мастера -->
+            <div class="modal-profile-details">
+                <h2 id="modalMasterName">Imię</h2>
+                <div class="modal-badge-row">
+                    <span class="status-pill">● Dostępna</span>
+                    <span id="modalMasterLangs" class="lang-pill">🗣 PL, EN</span>
+                </div>
+                
+                <div class="modal-params-grid">
+                    <div class="param-item"><span>Wiek:</span> <strong id="modalParamAge">24</strong></div>
+                    <div class="param-item"><span>Wzrost:</span> <strong id="modalParamHeight">165 cm</strong></div>
+                    <div class="param-item"><span>Waga:</span> <strong id="modalParamWeight">49 kg</strong></div>
+                    <div class="param-item"><span>Biust:</span> <strong id="modalParamBreast">3</strong></div>
+                </div>
+
+                <p id="modalMasterDesc" class="modal-bio">Masaż relaksacyjny, tantryczny oraz rytuały body-to-body w pełnej dyskrecji.</p>
+
+                <a id="modalBookingBtn" href="#" class="btn-modal-book" target="_blank">Umów wizytę przez WhatsApp</a>
+            </div>
+        </div>
+    </div>
+    <!-- Полноэкранный Lightbox для фото -->
+<div id="imageLightbox" class="image-lightbox" onclick="closeLightbox()">
+    <button type="button" class="lightbox-close" onclick="closeLightbox()">&times;</button>
+    <div class="lightbox-img-wrapper" onclick="event.stopPropagation()">
+        <img id="lightboxImg" src="" alt="Full view">
+    </div>
+</div>
+    <script src="script.js?v=6.0"></script>
 </body>
 </html>
