@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JQZBDTY1PG"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JQZBDTY1PG"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -24,95 +23,321 @@
             --bg: #0f1115;
             --card-bg: #181b22;
             --gold: #d4af37;
-            --text: #e2e8f0;
-            --text-dim: #94a3b8;
+            --gold-hover: #b89628;
+            --text-light: #f3f4f6;
+            --text-dim: #9ca3af;
+            --border: #282c37;
         }
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Montserrat', sans-serif; }
-        body { background: var(--bg); color: var(--text); line-height: 1.6; }
-        .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
-        header { padding: 20px 0; border-bottom: 1px solid rgba(255,255,255,0.08); display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-size: 20px; font-weight: 700; color: #fff; letter-spacing: 1px; }
-        .logo span { color: var(--gold); }
-        .header-btn { background: var(--gold); color: #000; text-decoration: none; padding: 8px 16px; border-radius: 6px; font-weight: 600; font-size: 14px; }
-        .hero { padding: 60px 0; text-align: center; }
-        .badge { display: inline-block; background: rgba(212, 175, 55, 0.1); color: var(--gold); border: 1px solid var(--gold); padding: 4px 12px; border-radius: 20px; font-size: 12px; margin-bottom: 15px; }
-        h1 { font-size: 32px; margin-bottom: 15px; color: #fff; }
-        p.subtitle { font-size: 16px; color: var(--text-dim); max-width: 600px; margin: 0 auto 30px; }
-        .actions { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
-        .btn { padding: 12px 24px; border-radius: 6px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; }
-        .btn-primary { background: #25D366; color: #fff; }
-        .btn-outline { border: 1px solid var(--gold); color: var(--gold); }
-        .services { padding: 50px 0; }
-        h2 { text-align: center; margin-bottom: 30px; font-size: 24px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-        .card { background: var(--card-bg); padding: 25px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.05); }
-        .card h3 { color: var(--gold); margin-bottom: 10px; font-size: 18px; }
-        .card p { color: var(--text-dim); font-size: 14px; margin-bottom: 15px; }
-        .card .price { font-size: 18px; font-weight: 700; color: #fff; }
-        .location { background: var(--card-bg); border-radius: 8px; padding: 30px; margin: 40px 0; text-align: center; border: 1px solid rgba(255,255,255,0.05); }
-        footer { border-top: 1px solid rgba(255,255,255,0.08); padding: 30px 0; text-align: center; font-size: 13px; color: var(--text-dim); }
-        footer a { color: var(--text-dim); margin: 0 10px; text-decoration: none; }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--bg);
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            padding: 20px 0;
+            border-bottom: 1px solid var(--border);
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: var(--gold);
+            text-transform: uppercase;
+        }
+
+        .hero {
+            padding: 60px 0 40px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+
+        .hero p {
+            font-size: 16px;
+            color: var(--text-dim);
+            max-width: 650px;
+            margin: 0 auto 30px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 14px 28px;
+            border-radius: 30px;
+            font-size: 15px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn-call {
+            background-color: var(--gold);
+            color: #000000;
+        }
+
+        .btn-call:hover {
+            background-color: var(--gold-hover);
+            transform: translateY(-2px);
+        }
+
+        .btn-wa {
+            background-color: transparent;
+            color: #25d366;
+            border: 1px solid #25d366;
+        }
+
+        .btn-wa:hover {
+            background-color: #25d366;
+            color: #ffffff;
+            transform: translateY(-2px);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            font-size: 26px;
+            color: #ffffff;
+            margin-bottom: 8px;
+        }
+
+        .badge-gold {
+            display: inline-block;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--gold);
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .services {
+            padding: 50px 0;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 30px;
+            text-align: left;
+            position: relative;
+        }
+
+        .card h3 {
+            font-size: 19px;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        .card p {
+            color: var(--text-dim);
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .price-list {
+            list-style: none;
+            border-top: 1px solid var(--border);
+            padding-top: 15px;
+        }
+
+        .price-list li {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .price-list li span:last-child {
+            font-weight: 600;
+            color: var(--gold);
+        }
+
+        /* Стили галереи на 6 фото */
+        .section-gallery {
+            padding: 50px 0;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .gallery-card {
+            height: 240px;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            background: var(--card-bg);
+        }
+
+        .gallery-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-card:hover img {
+            transform: scale(1.03);
+        }
+
+        .location {
+            padding: 50px 0 70px;
+            background-color: var(--card-bg);
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            text-align: center;
+        }
+
+        footer {
+            padding: 30px 0;
+            text-align: center;
+            font-size: 12px;
+            color: var(--text-dim);
+        }
+
+        footer a {
+            color: var(--text-dim);
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 28px; }
+            .cta-buttons { flex-direction: column; }
+            .btn { width: 100%; }
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+                gap: 10px;
+            }
+            .gallery-card {
+                height: 160px;
+            }
+        }
     </style>
 </head>
 <body>
+
     <header>
-        <div class="container" style="display:flex; justify-content:space-between; width:100%; align-items:center;">
-            <div class="logo">DUET<span>.STUDIO</span></div>
-            <a href="tel:+48502855086" class="header-btn">Zadzwoń</a>
+        <div class="container">
+            <div class="logo">Duet Studio</div>
         </div>
     </header>
 
     <main>
         <section class="hero">
             <div class="container">
-                <span class="badge">Gliwice Centrum, ul. Zwycięstwa 28</span>
-                <h1>Studio Masażu Relaksacyjnego</h1>
-                <p class="subtitle">Kameralna przestrzeń relaksu i regeneracji dla ciała i umysłu. Doświadcz profesjonalnych rytuałów wyciszających w centrum Gliwic.</p>
-                <div class="actions">
-                    <a href="https://wa.me/48502855086?text=Dzie%C5%84%20dobry,%20chcia%C5%82bym%20zapyta%C4%87%20o%20rezerwacj%C4%99%20sesji%20relaksacyjnej" class="btn btn-primary" target="_blank">Rezerwacja przez WhatsApp</a>
-                    <a href="tel:+48502855086" class="btn btn-outline">Kontakt telefoniczny</a>
+                <h1>Masaż Relaksacyjny w Centrum Gliwic</h1>
+                <p>Oderwij się od codziennego stresu. Zapewniamy profesjonalne sesje relaksacyjne, aromaterapię oraz autorskie rytuały w atmosferze pełnego spokoju i dyskrecji.</p>
+                <div class="cta-buttons">
+                    <a href="tel:+48502855086" class="btn btn-call">Zadzwoń: +48 502 855 086</a>
+                    <a href="https://wa.me/48502855086" class="btn btn-wa" target="_blank">Napisz na WhatsApp</a>
                 </div>
             </div>
         </section>
 
         <section class="services">
             <div class="container">
-                <h2>Programy Relaksacyjne</h2>
+                <div class="section-title">
+                    <span class="badge-gold">Oferta</span>
+                    <h2>Wybrane Sesje Relaksacyjne</h2>
+                </div>
                 <div class="grid">
-                    <!-- 1. 30 minut - 200 zł -->
                     <div class="card">
-                        <h3>Masaż Ekspresowy Relaks</h3>
-                        <p>Krótka, intensywna sesja wyciszająca napięcie mięśniowe i stres. Idealna opcja, gdy masz ograniczony czas.</p>
-                        <div class="price">200 zł / 30 min</div>
+                        <h3>Masaż Klasyczny Relaksacyjny</h3>
+                        <p>Płynne, odprężające techniki manualne niwelujące napięcie mięśniowe oraz wyciszające układ nerwowy.</p>
+                        <ul class="price-list">
+                            <li><span>Sesja 30 min</span> <span>200 PLN</span></li>
+                            <li><span>Sesja 60 min</span> <span>300 PLN</span></li>
+                        </ul>
                     </div>
 
-                    <!-- 2. 60 minut - 300 zł -->
                     <div class="card">
-                        <h3>Klasyczny Masaż Całego Ciała</h3>
-                        <p>Pełna godzina głębokiego odprężenia z użyciem ciepłych olejków. Najczęściej wybierana sesja regeneracyjna.</p>
-                        <div class="price">300 zł / 60 min</div>
+                        <h3>Rytuał Aromaterapeutyczny</h3>
+                        <p>Połączenie ciepłych olejków eterycznych z głębokim relaksem całego ciała. Przywraca harmonię i energię.</p>
+                        <ul class="price-list">
+                            <li><span>Sesja 30 min</span> <span>250 PLN</span></li>
+                            <li><span>Sesja 60 min</span> <span>350 PLN</span></li>
+                        </ul>
                     </div>
 
-                    <!-- 3. 4 ręce (duecie) - 550 zł -->
                     <div class="card">
-                        <h3>Relaks w Duecie (Na 4 Ręce)</h3>
-                        <p>Synchroniczny masaż relaksacyjny wykonywany jednocześnie przez dwie masażystki. Podwójna intensywność wyciszenia.</p>
-                        <div class="price">550 zł / 60 min</div>
-                    </div>
-
-                    <!-- 4. VIP 120 minut - 600 zł -->
-                    <div class="card">
-                        <h3>Rytuał VIP Głębokie Odprężenie</h3>
-                        <p>Dwie godziny kompleksowej regeneracji całego ciała w spokojnym tempie. Pełny reset i maksymalny komfort.</p>
-                        <div class="price">600 zł / 120 min</div>
+                        <h3>Sesja w Duecie (na 4 ręce)</h3>
+                        <p>Zsynchronizowany masaż wykonywany równolegle przez dwie masażystki. Wyjątkowe doznanie głębokiego relaksu.</p>
+                        <ul class="price-list">
+                            <li><span>Sesja 30 min</span> <span>350 PLN</span></li>
+                            <li><span>Sesja 60 min</span> <span>550 PLN</span></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="container">
-            <div class="location">
-                <h2>Komfort i Pełna Prywatność</h2>
+        <section class="section-gallery">
+            <div class="container">
+                <div class="section-title">
+                    <span class="badge-gold">Nasz Gabinet</span>
+                    <h2>Dyskretna Przestrzeń i Komfort</h2>
+                    <p style="color: var(--text-dim); font-size: 13px; margin-top: 5px;">Zadbany, nowoczesny gabinet w samym centrum Gliwic</p>
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-card"><img src="img/gallery-1.jpg" alt="Recepcja i strefa powitalna" loading="lazy"></div>
+                    <div class="gallery-card"><img src="img/gallery-2.jpg" alt="Gabinet masażu" loading="lazy"></div>
+                    <div class="gallery-card"><img src="img/gallery-3.jpg" alt="Prywatna strefa prysznicowa" loading="lazy"></div>
+                    <div class="gallery-card"><img src="img/gallery-4.jpg" alt="Strefa relaksu i odpoczynku" loading="lazy"></div>
+                    <div class="gallery-card"><img src="img/gallery-5.jpg" alt="Klimatyczne oświetlenie i świece" loading="lazy"></div>
+                    <div class="gallery-card"><img src="img/gallery-6.jpg" alt="Wnętrze salonu Duet" loading="lazy"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="location">
+            <div class="container">
+                <span class="badge-gold">Dyskrecja i Komfort</span>
+                <h2>Lokalizacja</h2>
                 <p style="color: var(--text-dim); max-width: 700px; margin: 10px auto;">Nasz gabinet mieści się w centrum Gliwic przy <strong>ul. Zwycięstwa 28</strong>. Zapewniamy kameralne warunki, prywatny parking dla gości oraz wcześniejszą rezerwację terminów.</p>
             </div>
         </section>
@@ -126,6 +351,7 @@
             </p>
         </div>
     </footer>
+
     <script>
   document.addEventListener('DOMContentLoaded', function () {
     // Клик по номеру телефона
@@ -144,7 +370,7 @@
     document.querySelectorAll('a[href*="wa.me"]').forEach(function (btn) {
       btn.addEventListener('click', function () {
         if (typeof gtag === 'function') {
-          gtag('event', 'contact_whatsapp_click', {
+          gtag('event', 'contact_wa_click', {
             event_category: 'Lead',
             event_label: 'WhatsApp Click'
           });
